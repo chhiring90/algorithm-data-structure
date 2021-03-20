@@ -1,6 +1,8 @@
 # DoublyLinkedList
 
-- Piece of data -> value - Reference to next node -> next - Reference to prev node -> prev
+- Piece of data -> value
+- Reference to next node -> next
+- Reference to prev node -> prev
 
 1. Pushing Pseudocode
 
