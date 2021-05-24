@@ -49,3 +49,50 @@
          - check to see if there is a node to the left
            - if there is, move to that node are repeat these steps
            - if there is not, we're done searching!
+
+**Tree Traversal**
+
+1. Breadth First Search
+
+   - Create a queue (this can be an array) and a variable ti store the value of nodes visited
+   - Place the root node in the queue
+   - Loop as long as there is anything in the queue
+
+     - Dequeue a node from the queue and push the value of the node into the variable that stores the nodes
+     - if there is a left property on the node dequeue - add it to the queue
+     - if there is a right property on the node dequeue - add it to the queue
+
+   - Return the variable that stores the values
+
+2. Depth First Inorder
+
+   - Create a variable to store the values of nodes visited
+   - Store the root of the BST in variable called current
+   - Write a helper function which accepts a node
+     - if the node has a left property, call the helper function with the left property on the node
+     - Push the vaule of the node to the variable that stores the values
+     - If the node has a right property, call the helper function with the right property on the nodes
+   - Invoke the helper function with the current variable
+   - return the array of values
+
+3. Depth First Preorder
+
+   - Create a variable to store the values of nodes visited
+   - Store the root of the BST in variables called current
+   - Write a helper function which accepts a node
+     - Push the value of the node to the variable that stores the values
+     - if the node has a left property, call the helper function with the left property on the node
+     - if the node has a right property, call the helper function with the right property on the node
+   - Invoke the helper function with the current variable
+   - return the array of values
+
+4. Depth First PostOrder
+
+- Create a variable to store the values of nodes visited
+- Store the root of the BST in variables called current
+- Write a helper function which accepts a node
+  - if the node has a left property, call the helper function with the left property on the node
+  - if the node has a right property, call the helper function with the right property on the node
+  - Push the value of the node to the variable that stores the values
+- Invoke the helper function with the current variable
+- return the array of values
