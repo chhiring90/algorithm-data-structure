@@ -3,7 +3,6 @@
 **Binary Heap**
 
 > Very Similar to a binary search tree, but with different rules!
-> We will be doing Max Binary Heap and Min Binary Heap
 > In a Max Binary Heap. parent node are always larger than child nodes, In a Min Binary Heap, parent nodes are always smaller than child nodes.
 
 **Max Binary Heap Rules**
@@ -15,11 +14,10 @@
 - No Implied ordering between siblings.
 
 **Mathematical Relation Between Child and Parent**
-
--To Find child 
- - 2n+1 - 2n+2
--To Find parent
- - (n-1)/2 - floored
+1. PushingTo Find child 
+- 2n+1 - 2n+2
+2. To Find parent
+- (n-1)/2 - floored
 
 1.Insert Pseudocode
 - Push the value into the values property on the heap
