@@ -1,4 +1,4 @@
-# Max Binary Heap
+# Priority Queue
 
 **Insert Pseudocode**
 - Push the value into the values property on the heap.
