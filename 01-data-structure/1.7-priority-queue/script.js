@@ -20,7 +20,7 @@ class PriorityQueue {
         let idx = this.values.length - 1;
         const element = this.values[idx];
         while (idx > 0) {
-            let parentIdx = this.values.length - 1;
+            let parentIdx = Math.flooe((idx - 1) / 2);
             let parent = this.values[parentIdx];
             if (element.priority >= parent.priority) break;
             this.values[parentIdx] = element;
